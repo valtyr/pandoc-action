@@ -1,0 +1,10 @@
+name: Markdown to PDF
+description: Builds all PDFs from all .md files
+
+runs:
+  using: 'docker'
+  image: 'docker://valtyr/pandoc:latest'
+  entrypoint: /source/clean-and-build.sh
+branding:
+  icon: 'paperclip'  
+  color: 'purple'
